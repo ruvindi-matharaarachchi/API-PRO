@@ -49,11 +49,18 @@
   margin-top: 12px;
   font-weight: 600;
   transition: background 0.2s, color 0.2s, border 0.2s;
+  display: inline-block;
 }
 .hero-cta-secondary:hover {
   background: #fff;
   color: #4f8cff;
   border-color: #e6f0ff;
+}
+.hero-cta-pricing {
+  margin-top: 10px;
+}
+.hero-cta-docs {
+  margin-top: 10px;
 }
 
 /* Features Section */
@@ -154,4 +161,38 @@
     margin-left: 0;
     margin-top: 12px;
   }
+  .hero-cta-pricing {
+    margin-top: 10px;
+  }
+  .hero-cta-docs {
+    margin-top: 10px;
+  }
+} 
+
+.docs-link-button {
+  display: inline-block;
+  font-size: 0.98rem;
+  color: #4f8cff;
+  background: #fff;
+  border: 1.5px solid #4f8cff;
+  border-radius: 20px;
+  padding: 6px 18px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.18s, color 0.18s, border 0.18s;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+.docs-link-button:hover {
+  background: #e6f0ff;
+  color: #2a5dab;
+  border-color: #2a5dab;
+  text-decoration: none;
+} 
+
+.home-contact-link-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 24px 0 0 0;
 } 

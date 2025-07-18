@@ -10,10 +10,14 @@ const Home = () => (
         <h1 className="hero-headline">Unlock the Power of Your APIs</h1>
         <p className="hero-subheadline">Seamlessly manage, secure, and analyze your APIs with next-gen tools.</p>
         <a href="/docs" className="hero-cta">Get Started for Free</a>
+        <Link to="/docs" className="hero-cta hero-cta-secondary hero-cta-docs">Read Our Docs</Link>
         <Link to="/about" className="hero-cta hero-cta-secondary">Learn More About Us</Link>
+        <Link to="/pricing" className="hero-cta hero-cta-secondary hero-cta-pricing">View Pricing</Link>
       </div>
     </section>
-
+    <div className="home-contact-link-wrapper">
+      <Link to="/contact" className="docs-link-button">Contact Us</Link>
+    </div>
     {/* Features Section */}
     <section className="features-section">
       <div className="features-cards">
@@ -31,7 +35,6 @@ const Home = () => (
         </article>
       </div>
     </section>
-
     {/* Social Proof Section */}
     <section className="social-proof-section">
       <h3 className="social-proof-heading">Trusted by the World's Most Innovative Companies</h3>

@@ -1,0 +1,123 @@
+/* Documentation Page Styles */
+
+docs-container, .docs-container {
+  display: flex;
+  min-height: 100vh;
+  background: #f9fafe;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.docs-sidebar {
+  width: 260px;
+  background: #fff;
+  border-right: 1.5px solid #e6eaf2;
+  padding: 40px 0 40px 0;
+  min-height: 100vh;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.docs-category {
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: #4f8cff;
+  padding: 0 32px;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+.docs-links {
+  list-style: none;
+  padding: 0 32px 0 32px;
+  margin: 0 0 18px 0;
+}
+.docs-links li {
+  margin-bottom: 8px;
+}
+.docs-links a {
+  color: #222;
+  text-decoration: none;
+  font-size: 1.05rem;
+  padding: 6px 0 6px 0;
+  display: block;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+.docs-links a.active, .docs-links a:hover {
+  background: #e6f0ff;
+  color: #4f8cff;
+}
+
+.docs-content {
+  flex: 1;
+  padding: 56px 48px 56px 48px;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.docs-endpoint-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #4f8cff;
+  margin-bottom: 18px;
+}
+.docs-endpoint-desc {
+  font-size: 1.15rem;
+  color: #333;
+  margin-bottom: 32px;
+}
+.docs-section-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+  margin: 32px 0 12px 0;
+}
+.docs-code-block {
+  background: #23272f;
+  color: #e6eaf2;
+  font-size: 1rem;
+  border-radius: 10px;
+  padding: 18px 20px;
+  overflow-x: auto;
+  margin-bottom: 0;
+  font-family: 'Fira Mono', 'Consolas', 'Menlo', monospace;
+}
+
+@media (max-width: 900px) {
+  .docs-container {
+    flex-direction: column;
+  }
+  .docs-sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1.5px solid #e6eaf2;
+    flex-direction: row;
+    gap: 0;
+    padding: 0;
+    min-height: unset;
+    position: static;
+  }
+  .docs-category, .docs-links {
+    padding: 16px 12px;
+  }
+  .docs-content {
+    padding: 32px 8vw 32px 8vw;
+  }
+}
+@media (max-width: 600px) {
+  .docs-content {
+    padding: 18px 2vw 18px 2vw;
+  }
+  .docs-endpoint-title {
+    font-size: 1.2rem;
+  }
+  .docs-section-title {
+    font-size: 1rem;
+  }
+  .docs-code-block {
+    font-size: 0.95rem;
+    padding: 12px 6px;
+  }
+} 
