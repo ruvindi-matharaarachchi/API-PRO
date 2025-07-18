@@ -4,7 +4,7 @@ API PRO is a fictional all-in-one API Management Platform. This 5-page responsiv
 
 ## 🔧 Tech Stack
 
-- **React (Vite)**
+- **React (Create React App)**
 - **React Router DOM**
 - **Plain CSS**
 - **Axios** (for API fetching)
