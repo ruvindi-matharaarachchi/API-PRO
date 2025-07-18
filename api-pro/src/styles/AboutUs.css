@@ -1,0 +1,128 @@
+/* About Us Page Styles */
+
+.aboutus-container {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #222;
+  background: #f9fafe;
+  min-height: 100vh;
+}
+
+/* Mission Section */
+.mission-section {
+  background: #fff;
+  padding: 56px 16px 40px 16px;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(79,140,255,0.04);
+}
+.mission-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #4f8cff;
+  margin-bottom: 18px;
+}
+.mission-headline {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+  color: #222;
+}
+.mission-text {
+  font-size: 1.1rem;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Team Section */
+.team-section {
+  padding: 56px 16px 56px 16px;
+  background: #f9fafe;
+}
+.team-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #4f8cff;
+  text-align: center;
+  margin-bottom: 36px;
+}
+.team-loading,
+.team-error {
+  text-align: center;
+  color: #888;
+  font-size: 1.1rem;
+  margin-bottom: 24px;
+}
+.team-error {
+  color: #d32f2f;
+}
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 32px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.team-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(79,140,255,0.08);
+  padding: 32px 20px 24px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s;
+}
+.team-card:hover {
+  box-shadow: 0 4px 20px rgba(79,140,255,0.16);
+}
+.team-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4f8cff 60%, #6ad7e5 100%);
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team-name {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 8px;
+}
+.team-email {
+  font-size: 1rem;
+  color: #4f8cff;
+  margin-bottom: 6px;
+  word-break: break-all;
+}
+.team-website {
+  font-size: 0.98rem;
+  color: #2a5dab;
+  text-decoration: none;
+  word-break: break-all;
+  transition: color 0.2s;
+}
+.team-website:hover {
+  color: #4f8cff;
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 700px) {
+  .mission-section {
+    padding: 36px 4px 24px 4px;
+  }
+  .team-section {
+    padding: 36px 4px 36px 4px;
+  }
+  .team-card {
+    padding: 22px 8px 16px 8px;
+  }
+  .team-avatar {
+    width: 48px;
+    height: 48px;
+  }
+} 
