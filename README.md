@@ -37,4 +37,4 @@ Cursor was used throughout this project for:
 git clone https://github.com/your-username/api-pro.git
 cd api-pro
 npm install
-npm run dev
+npm start
