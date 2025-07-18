@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { MessageSquare } from 'lucide-react';
 import '../styles/Home.css';
 
 const Home = () => (
@@ -16,7 +17,10 @@ const Home = () => (
       </div>
     </section>
     <div className="home-contact-link-wrapper">
-      <Link to="/contact" className="docs-link-button">Contact Us</Link>
+      <Link to="/contact" className="contact-gradient-btn">
+        <MessageSquare size={20} className="contact-gradient-btn-icon" />
+        Contact Us
+      </Link>
     </div>
     {/* Features Section */}
     <section className="features-section">
